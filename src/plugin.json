@@ -4,6 +4,7 @@
   "name": "Docstest",
   "id": "eriktest-docstest-datasource",
   "metrics": true,
+  "docsPath": "docs",
   "info": {
     "description": "",
     "author": {
