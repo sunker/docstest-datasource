@@ -3,6 +3,7 @@
   "type": "datasource",
   "name": "Docstest",
   "id": "eriktest-docstest-datasource",
+  "docsPath": "docs",
   "metrics": true,
   "info": {
     "description": "",
