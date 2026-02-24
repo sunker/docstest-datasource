@@ -4,7 +4,7 @@ description: Overlay events from your service as annotations on Grafana panels.
 sidebar_position: 4
 ---
 
-# Annotation queries
+# Annotation queries2
 
 Annotations let you overlay events from [Service Name] on any Grafana panel. Use them to correlate metrics with deployments, incidents, or other events.
 
@@ -20,18 +20,19 @@ Annotations let you overlay events from [Service Name] on any Grafana panel. Use
 
 ## Configuration
 
-| Field | Description |
-|-------|-------------|
-| **Query** | The query to fetch events. Must return at least a timestamp field. |
-| **Title field** | The field to use as the annotation title. |
-| **Text field** | The field to use as the annotation body text. |
-| **Tags field** | Optional. The field to use for annotation tags, useful for filtering. |
+| Field           | Description                                                           |
+| --------------- | --------------------------------------------------------------------- |
+| **Query**       | The query to fetch events. Must return at least a timestamp field.    |
+| **Title field** | The field to use as the annotation title.                             |
+| **Text field**  | The field to use as the annotation body text.                         |
+| **Tags field**  | Optional. The field to use for annotation tags, useful for filtering. |
 
 ## Example
 
 Query events from an `events` table and display them as annotations:
 
 **Query:**
+
 ```
 SELECT timestamp, title, description, tags
 FROM events

@@ -20,4 +20,5 @@ export const copyFilePatterns = [
     from: screenshotPath,
     to: screenshotPath,
   })),
+  { from: '../docs/**/*', to: 'docs/', noErrorOnMissing: true },
 ];

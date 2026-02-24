@@ -1,7 +1,7 @@
 ---
 title: Code editor
 description: Write queries directly using the code editor for full control over query syntax.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Code editor
@@ -41,8 +41,8 @@ WHERE region = '$region'
 
 ## Keyboard shortcuts
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+Enter` | Run query |
+| Shortcut     | Action               |
+| ------------ | -------------------- |
+| `Ctrl+Enter` | Run query            |
 | `Ctrl+Space` | Trigger autocomplete |
-| `Ctrl+/` | Toggle comment |
+| `Ctrl+/`     | Toggle comment       |

@@ -17,7 +17,7 @@ apiVersion: 1
 
 datasources:
   - name: DocsTest
-    type: sunker-docstest-datasource
+    type: eriktest-docstest-datasource
     access: proxy
     url: https://api.example.com/v1
     jsonData:
@@ -29,12 +29,12 @@ datasources:
 
 ### Configuration fields
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `url` | string | API endpoint URL |
-| `jsonData.defaultRegion` | string | Default query region |
-| `jsonData.maxConcurrentRequests` | number | Max parallel API requests |
-| `secureJsonData.apiKey` | string | API key (stored encrypted) |
+| Field                            | Type   | Description                |
+| -------------------------------- | ------ | -------------------------- |
+| `url`                            | string | API endpoint URL           |
+| `jsonData.defaultRegion`         | string | Default query region       |
+| `jsonData.maxConcurrentRequests` | number | Max parallel API requests  |
+| `secureJsonData.apiKey`          | string | API key (stored encrypted) |
 
 > **Tip:** Use environment variables (e.g., `${DOCSTEST_API_KEY}`) for sensitive values instead of hardcoding them.
 
@@ -44,7 +44,7 @@ If you manage Grafana with Terraform, use the `grafana_data_source` resource:
 
 ```hcl
 resource "grafana_data_source" "docstest" {
-  type = "sunker-docstest-datasource"
+  type = "eriktest-docstest-datasource"
   name = "DocsTest"
   url  = "https://api.example.com/v1"
 
