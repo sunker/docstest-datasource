@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm audit *)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\); Object.entries\\(d.vulnerabilities||{}\\).filter\\(\\([,v]\\)=>['high','critical'].includes\\(v.severity\\)\\).forEach\\(\\([k,v]\\)=>console.log\\(k, v.severity, v.fixAvailable\\)\\)\")",
+      "Bash(npm ls *)",
+      "Bash(npm view *)"
+    ]
+  }
+}
