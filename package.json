@@ -1,6 +1,6 @@
 {
   "name": "docstest",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
     "dev": "webpack -w -c ./.config/webpack/webpack.config.ts --env development",
@@ -69,9 +69,10 @@
     "@emotion/css": "11.10.6",
     "@grafana/data": "^12.3.2",
     "@grafana/i18n": "^12.3.2",
+    "@grafana/plugin-docs-cli": "^0.0.11-canary.2636.26226198477.0",
     "@grafana/runtime": "^12.3.2",
-    "@grafana/ui": "^12.3.2",
     "@grafana/schema": "^12.3.2",
+    "@grafana/ui": "^12.3.2",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
   },
