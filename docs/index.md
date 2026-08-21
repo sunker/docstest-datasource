@@ -1,47 +1,24 @@
 ---
-title: Infinity data source plugin for Grafana
-description: The Infinity data source plugin allows you to query and visualize data from JSON, CSV, GraphQL, XML, and HTML endpoints.
+title: Overview
+description: Learn about the Clock plugin.
+sidebar_position: 1
 ---
 
-## Overview
+Clock displays the current time, or counts down or up to a target moment, directly on your dashboard. Use it to show the time in another office, run a countdown to a deadline or launch, or track how long it's been since an event started.
 
-A universal data source plugin for pulling data from various systems into Grafana using existing REST APIs. Grafana's go-to plugin for cases when a native plugin doesn't exist yet.
+## Features
 
-[Watch on YouTube: Get started with the Grafana Infinity data source plugin](https://www.youtube.com/watch?v=BxWw4BWY5ns)
+- Displays the current time, or counts down or up to a target time
+- Sets the countdown or countup target from a fixed date and time, or from a datasource query
+- Renders as a classic text clock or as a digital (SVG) display with configurable fill, stroke, and glow colors
+- Shows an optional date and timezone alongside the time
+- Shows an optional description alongside the time, either static text or a value pulled from a query
+- Formats time, date, and timezone using any locale or explicit timezone
+- Refreshes every second, or only when the dashboard refreshes
+- Available in 19 languages
 
-[Try it live: Infinity plugin demo](https://play.grafana.org/d/infinity)
+## Requirements
 
-## Key Features
+Clock requires Grafana 11.0.0 or later.
 
-The Infinity data source supports the following key features:
-
-- Bring data from multiple sources into Grafana
-- Flexible data manipulation with UQL, JSONata, GROQ
-- Various data formats such as JSON, CSV
-- Various authentication methods
-  - Basic authentication
-  - Bearer token authentication
-  - API key authentication
-  - OAuth passthrough
-  - OAuth2 client credentials
-  - OAuth2 JWT authentication
-  - AWS/Azure/GCP authentication
-  - Digest authentication
-- Alerting, recorded queries, shared dashboards, query caching
-- Utility variable functions
-- Grafana node graph panel, annotations, and so on
-
-## Supported data formats
-
-- [JSON](./json.md) - Visualize JSON data
-- [CSV / TSV](./csv.md) - Visualize CSV, TSV or any delimited content
-- [XML / HTML](./xml.md) - Visualize XML / HTML data
-- [GraphQL](./graphql.md) - Visualize data from GraphQL endpoints
-
-## Known Limitations
-
-Infinity plugin has the following known limitations:
-
-- Backend features such as alerting, shared dashboards, recorded queries or enterprise query caching only available in **backend** parsing mode.
-- Infinity is not designed for handling a huge amount of data. When inlining the data, make sure they are small snippets less than 1MB of size.
-- For a list of all known bugs, check [GitHub](https://github.com/grafana/grafana-infinity-datasource/issues).
+Clock works without a datasource when you set the countdown or countup target manually. To drive the target time from a query, use any datasource that returns a time-typed field.
