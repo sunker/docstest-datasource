@@ -1,6 +1,6 @@
 {
   "name": "docstest",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
     "dev": "webpack -w -c ./.config/webpack/webpack.config.ts --env development",
@@ -19,7 +19,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@grafana/eslint-config": "^9.0.0",
-    "@grafana/plugin-docs-cli": "^0.2.1",
+    "@grafana/plugin-docs-cli": "https://pkg.pr.new/grafana/plugin-tools/@grafana/plugin-docs-cli@82fc6cd",
     "@grafana/plugin-e2e": "^3.7.0",
     "@grafana/tsconfig": "^2.0.1",
     "@playwright/test": "^1.57.0",
