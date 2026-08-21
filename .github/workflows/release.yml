@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: grafana/plugin-actions/build-plugin@eriksundell/plugin-docs-build-step
+      - uses: grafana/plugin-actions/build-plugin@main
         with:
           node-version: 24
           policy_token: ${{ secrets.GRAFANA_ACCESS_POLICY_TOKEN }}
